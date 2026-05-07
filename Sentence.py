@@ -28,9 +28,6 @@ class Sentence:
         new_sentence = ""
         if self.sentence=="":
             return ""
-        if self.objects[0]=="¿Qué es" or self.objects[0]=="que es" or self.objects[0]=="que es?" or self.objects[0]=="qué es" or self.objects[0]=="que es?":
-            new_sentence+="Es"
-        else: pass
         for object in self.objects:
             if random() < 0.5:
                 new_sentence+=object.get_name()+" "
