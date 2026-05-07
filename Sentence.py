@@ -1,5 +1,6 @@
 from Word import Word
 from words import words
+from random import random
 class Sentence:
     def __init__(self, sentence: str):
         self.sentence = sentence
@@ -25,6 +26,19 @@ class Sentence:
                 existing_word.add_next_word(next_word)
     def process_answer(self):
         new_sentence = ""
+        if self.sentence=="":
+            return ""
+        if self.objects[0]=="¿Qué es" or self.objects[0]=="que es" or self.objects[0]=="que es?" or self.objects[0]=="qué es" or self.objects[0]=="que es?":
+            new_sentence+="Es"
+        else: pass
         for object in self.objects:
+            if random() < 0.5:
+                new_sentence+=object.get_name()+" "
             new_sentence+=object.get_new_word()+" "
+            try:
+                onemoreword = Word(new_sentence.split()[-1])
+                new_sentence+=onemoreword.get_new_word()+" "
+            except: pass
+        new_sentence = new_sentence.removesuffix(".")
+        new_sentence+="."
         return new_sentence

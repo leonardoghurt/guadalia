@@ -1,9 +1,9 @@
-from random import randint, choice
+from random import randint, choice, random
 import words
 class Word:
     def __init__(self, word: str):
         self.word = word
-        self.nextwords = ["what"]
+        self.nextwords = [""]
         words.words.append(self)
     def add_next_word(self, word: str):
         self.nextwords.append(word)
