@@ -4,7 +4,7 @@ def main():
     while True:
         sentence_input = input("Enter a sentence: ")
         sentence = Sentence(sentence_input)
-        sentence.add_objects_add_next()
+        sentence.add_objects()
         processed_sentence = sentence.process_answer()
         print("Answer:", processed_sentence)
 if __name__ == "__main__":

@@ -6,6 +6,8 @@ class Word:
         self.nextwords = [""]
         words.words.append(self)
     def add_next_word(self, word: str):
+        try: self.nextwords.remove("")
+        except: pass
         self.nextwords.append(word)
     def get_name(self):
         return self.word

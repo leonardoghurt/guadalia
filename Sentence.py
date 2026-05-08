@@ -5,11 +5,11 @@ class Sentence:
     def __init__(self, sentence: str):
         self.sentence = sentence
         self.objects = []
-    def add_objects_add_next(self):
+    def add_objects(self):
+        self.objects = []
         split_words = self.sentence.split()
-        
-        for i, word in enumerate(split_words):
-            next_word = split_words[i + 1] if i + 1 < len(split_words) else None
+
+        for word in split_words:
             existing_word = None
 
             for saved_word in words:
@@ -22,8 +22,10 @@ class Sentence:
 
             self.objects.append(existing_word)
 
-            if next_word is not None:
-                existing_word.add_next_word(next_word)
+    def add_next(self):
+        for i, current_word in enumerate(self.objects[:-1]):
+            next_word = self.objects[i + 1].get_name()
+            current_word.add_next_word(next_word)
     def process_answer(self):
         new_sentence = ""
         if self.sentence=="":

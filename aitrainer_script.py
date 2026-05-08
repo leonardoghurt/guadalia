@@ -18,8 +18,9 @@ def create_sentences_from_txt_files(directory: Path | None = None):
         )
         sentence = Sentence(content)
         Debug(f"aitrainer_script: created Sentence object for '{txt_file.name}'")
-        sentence.add_objects_add_next()
-        Debug(f"aitrainer_script: processed word transitions for '{txt_file.name}'")
+        sentence.add_objects()
+        sentence.add_next()
+        Debug(f"aitrainer_script: processed word objects and transitions for '{txt_file.name}'")
         
 
 Debug("aitrainer_script: running create_sentences_from_txt_files()")
