@@ -1,0 +1,103 @@
+el sistema operativo
+el núcleo del sistema
+el gestor de memoria
+el proceso activo
+el hilo principal
+la interfaz gráfica
+la ventana abierta
+el botón interactivo
+el menú desplegable
+la barra lateral
+el escritorio virtual
+el icono visible
+el archivo binario
+el archivo fuente
+el directorio raíz
+la carpeta personal
+el permiso de usuario
+el acceso restringido
+la contraseña segura
+el cifrado simétrico
+el algoritmo hash
+la base de datos
+la tabla relacional
+la consulta SQL
+el servidor remoto
+el cliente web
+la petición HTTP
+la respuesta del servidor
+el protocolo TCP
+la dirección IP
+la máscara de red
+la puerta de enlace
+el router doméstico
+el paquete de datos
+la transmisión segura
+la red local
+la red global
+el firewall activo
+el antivirus actualizado
+el malware detectado
+el exploit conocido
+la vulnerabilidad crítica
+el parche de seguridad
+la actualización automática
+el repositorio Git
+la rama principal
+el commit reciente
+el conflicto de fusión
+el código fuente
+el compilador eficiente
+el intérprete Python
+el script ejecutable
+la variable global
+la función recursiva
+el objeto instanciado
+la clase base
+el método privado
+la biblioteca externa
+el framework moderno
+la API pública
+el endpoint REST
+la solicitud POST
+la respuesta JSON
+el token de acceso
+la sesión activa
+el navegador web
+la pestaña abierta
+el historial guardado
+la caché local
+el cookie persistente
+el motor de búsqueda
+el resultado indexado
+el enlace simbólico
+el sistema de archivos
+el disco duro
+la unidad SSD
+la memoria RAM
+el procesador central
+la arquitectura x86
+el sistema embebido
+el dispositivo IoT
+el sensor conectado
+la nube distribuida
+el servidor virtual
+la máquina remota
+la instancia activa
+el contenedor Docker
+la imagen base
+el orquestador Kubernetes
+el clúster escalable
+la automatización CI
+el pipeline continuo
+el test unitario
+el error crítico
+el log del sistema
+la depuración activa
+el breakpoint configurado
+el flujo de datos
+la entrada estándar
+la salida estándar
+el buffer temporal
+la cola de procesos
+el scheduler eficiente
