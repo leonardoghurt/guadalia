@@ -1,6 +1,9 @@
 eres listo
-eres tonto
+eres Carmen
 eres bueno
+eres rápido
+eres Carmen
+eres Carmen
 corre rápido
 corro rápido
 corres rápido
@@ -12,6 +15,7 @@ soy feliz
 soy triste
 soy alto
 soy bajo
+soy Leo
 estoy cansado
 estoy despierto
 estoy enfermo
