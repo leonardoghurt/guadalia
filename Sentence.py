@@ -30,31 +30,24 @@ class Sentence:
         if self.sentence=="":
             return ""
         objects_to_process = self.objects
-
         question_prefixes = (
             "cómo es el",
             "cómo es la",
             "como es el",
             "como es la",
+            "cómo es",
+            "como es",
+            "qué es",
+            "que es",
         )
-
-        if self.sentence.startswith(question_prefixes):
-            objects_to_process = self.objects[3:]
-
+        for question_prefix in question_prefixes:
+            if self.sentence.startswith(question_prefix):
+                objects_to_process = self.objects[len(question_prefix.split()):]
+                break
         for object in objects_to_process:
             new_word = object.get_new_word()
             if new_word != "":
                 new_sentence.append(new_word)
-
         if len(new_sentence) == 0:
             return ""
-
-        if new_sentence[-1] in ("de", "del"):
-            for saved_word in words:
-                if saved_word.get_name() == new_sentence[-1]:
-                    new_word = saved_word.get_new_word()
-                    if new_word != "":
-                        new_sentence.append(new_word)
-                    break
-
-        return " ".join(new_sentence) + "."
+        return (" ".join(new_sentence) + ".").capitalize()
