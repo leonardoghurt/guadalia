@@ -1,5 +1,5 @@
-from Word import Word
-from words import words
+from Token import Token
+from tokens import tokens
 class Sentence:
     def __init__(self, sentence: str):
         self.sentence = sentence
@@ -11,13 +11,13 @@ class Sentence:
         for word in split_words:
             existing_word = None
 
-            for saved_word in words:
+            for saved_word in tokens:
                 if saved_word.get_name() == word:
                     existing_word = saved_word
                     break
 
             if existing_word is None:
-                existing_word = Word(word)
+                existing_word = Token(word)
 
             self.objects.append(existing_word)
 
