@@ -24,7 +24,7 @@ class Sentence:
     def add_next(self):
         for i, current_word in enumerate(self.objects[:-1]):
             next_word = self.objects[i + 1].get_name()
-            current_word.add_next_word(next_word)
+            current_word.add_next_token(next_word)
     def process_answer(self):
         new_sentence = []
         if self.sentence=="":
@@ -45,7 +45,7 @@ class Sentence:
                 objects_to_process = self.objects[len(question_prefix.split()):]
                 break
         for object in objects_to_process:
-            new_word = object.get_new_word()
+            new_word = object.get_new_token()
             if new_word != "":
                 new_sentence.append(new_word)
         if len(new_sentence) == 0:
